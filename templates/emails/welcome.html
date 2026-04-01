@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome to Our E-commerce Platform!</h2>
+        <p>Hello {{ user.first_name }},</p>
+        <p>Thank you for joining us. We're excited to have you as a member of our community.</p>
+        <p>Start exploring our products and enjoy exclusive deals:</p>
+        <a href="#" class="button">Start Shopping</a>
+        <p>If you have any questions, our support team is here to help.</p>
+        <p>Happy shopping!</p>
+    </div>
+</body>
+</html>

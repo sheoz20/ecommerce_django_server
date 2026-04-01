@@ -1,0 +1,9 @@
+-r base.txt
+
+# Development Tools
+django-debug-toolbar>=4.2,<4.3
+pytest>=7.4,<7.5
+pytest-django>=4.7,<4.8
+factory-boy>=3.3,<3.4
+black>=23.12,<24.0
+flake8>=7.0,<7.1
