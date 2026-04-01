@@ -17,7 +17,7 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Install Python dependencies
-COPY requirements/production.txt requirements/
+COPY requirements/ requirements/
 RUN pip install --no-cache-dir -r requirements/production.txt
 
 # Copy project
