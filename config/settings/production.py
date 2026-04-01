@@ -18,7 +18,7 @@ SECURE_HSTS_INCLUDE_SUBDOMAINS = True
 SECURE_HSTS_PRELOAD = True
 
 # Allowed hosts must be explicitly set in production
-ALLOWED_HOSTS = env.list('DJANGO_ALLOWED_HOSTS')
+ALLOWED_HOSTS = env.list('DJANGO_ALLOWED_HOSTS', default=['localhost', '127.0.0.1', '*'])
 
 # Static files
 STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'

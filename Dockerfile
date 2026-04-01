@@ -5,6 +5,8 @@ FROM python:3.11-slim
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 ENV DJANGO_SETTINGS_MODULE=config.settings.production
+ENV DJANGO_SECRET_KEY=change-me-in-production
+ENV DJANGO_ALLOWED_HOSTS=*
 
 # Set work directory
 WORKDIR /app
